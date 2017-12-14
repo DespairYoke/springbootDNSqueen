@@ -1,0 +1,23 @@
+spring:
+  devtools:
+    restart:
+      exclude:  public/**
+      enabled:  true
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:mappers/*Mapper.xml
+
+server:
+  port: 9090
+
+liumapp:
+  certificate:
+    generator:
+      port: 40213
+      startDelay: 3000
+      keyStoreSavePath: /usr/local/certificateGenerator/keystore
+
+
+
